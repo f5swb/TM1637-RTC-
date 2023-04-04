@@ -36,7 +36,8 @@ void setup() {
 // initialisation du port série @9600 bauds      
   Serial.begin(9600);          
   TM1637.begin();               
-  TM1637.setBacklight(backlight);   
+  TM1637.setBacklight(backlight); 
+  TM1637.clear();  
   
 // initialisation du module RTC      
   if (! rtc.begin()) {
